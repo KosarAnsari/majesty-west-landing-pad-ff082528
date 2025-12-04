@@ -24,7 +24,7 @@ const LegalInfo = () => {
   ];
 
   const importantNotes = [
-    "This is a channel partner website. We are authorized channel partners for Godrej Properties.",
+    "This is a channel partner website. We are authorized channel partners for AU Aspire Properties.",
     "All information provided is based on the latest available data from the developer.",
     "Prices, specifications, and amenities are subject to change without prior notice.",
     "Images and renderings are for representational purposes only and may vary from actual construction.",
@@ -133,10 +133,10 @@ const LegalInfo = () => {
                     Channel Partner Declaration
                   </h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    We are an authorized channel partner for Godrej Properties Limited. 
+                    We are an authorized channel partner for AU Aspire . 
                     This website is operated by [Channel Partner Name] under authorization 
-                    from Godrej Properties. All bookings and transactions are processed 
-                    through official Godrej Properties systems and procedures.
+                    from AU Aspire Properties. All bookings and transactions are processed 
+                    through official AU Aspire Properties systems and procedures.
                   </p>
                 </div>
               </div>

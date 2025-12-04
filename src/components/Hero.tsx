@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Godrej Majesty Building"
+          alt="AU Aspire Building"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent"></div>
@@ -25,24 +25,24 @@ const Hero = () => {
           <div className="text-primary-foreground animate-fade-up order-2 lg:order-1 text-center">
             <h1 className="leading-tight font-extrabold tracking-tight">
               {/* GODREJ */}
-              <span className="block text-3xl md:text-4xl lg:text-6xl animate-fade-in">
-                GODREJ
+              <span className="block text-3xl md:text-4xl lg:text-6xl animate-fade-in ">
+                AU ASPIRE
               </span>
 
-              {/* MAJESTY */}
-              <span className="block text-4xl md:text-5xl lg:text-7xl text-accent animate-float">
-                MAJESTY
-              </span>
+             
+              
             </h1>
 
 
             <p className="text-lg md:text-xl lg:text-2xl mb-3 md:mb-4 opacity-90">
-              3 & 4 BHK Ultra Luxury Apartments
+             Redefining Urban Living in Sector 76, Noida
             </p>
 
             <p className="text-base md:text-lg mb-6 md:mb-8 opacity-80 leading-relaxed">
-              Experience premium living at Sector 12 Greater Noida West with world-class amenities,
-              strategic location, and architectural excellence by Godrej Properties.
+              3 & 4 BHK Ultra Luxury Apartments
+              
+               world-class amenities,
+              strategic location, and architectural excellence by AU Aspire.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-12 text-center">

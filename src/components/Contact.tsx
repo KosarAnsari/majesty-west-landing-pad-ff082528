@@ -96,7 +96,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl font-bold mb-4">
-                Ready to Make Godrej Majesty Your Home?
+                Ready to Make Your Home in Aspire City?
               </h2>
               <p className="text-lg opacity-90 leading-relaxed">
                 Contact our expert team today to schedule a site visit or get more information
@@ -115,7 +115,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Project Location</h3>
-                <p className="opacity-80">Sector 12, Greater Noida West, UP</p>
+                <p className="opacity-80">Sector 76, Noida, UP</p>
               </div>
             </div>
 

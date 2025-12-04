@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border z-50">
+    <header className="fixed top-0 left-0 right-0 bg-gradient-luxury backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -41,8 +41,8 @@ const Header = () => {
               <img src={logo} alt="Godrej Logo" className="w-10 h-10 object-contain" />
             </div>
             <div>
-              <h1 className="text-xl font-extrabold bg-clip-text text-yellow-600 tracking-wide">
-                Godrej Majesty
+              <h1 className="text-4xl font-sm bg-clip-text text-white tracking-wide">
+                AU ASPIRE
               </h1>            </div>
           </div>
 
@@ -55,7 +55,7 @@ const Header = () => {
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
                 data-scroll-to={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
+                className="text-foreground hover:text-primary transition-colors duration-200 text-sm font-medium text-white"
               >
                 {item.label}
               </button>

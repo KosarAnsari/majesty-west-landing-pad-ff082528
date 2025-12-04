@@ -98,7 +98,7 @@ const FloorPlans = () => {
     },
     {
       id: "4bhk-study",
-      title: "4 BHK + Study",
+      title: "4 BHK + Study + Plan",
       subtitle: "Luxury Apartments",
       area:"2799 Sq. Ft.",
       price: " ₹3.96 Cr – ₹4.48 Cr",
