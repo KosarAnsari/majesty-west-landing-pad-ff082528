@@ -254,7 +254,7 @@ const LeadForm = ({ variant = "hero", title, subtitle }: LeadFormProps) => {
                   <FormLabel>Interested In</FormLabel>
                   <FormControl>
                     <div className="space-y-2">
-                      <div className="flex flex-wrap gap-2 min-h-[2.5rem] p-2 border rounded-md">
+                      <div className="flex flex-wrap gap-2 min-h-[2.5rem] p-2 border rounded-md ">
                         {field.value.length === 0 && (
                           <span className="text-muted-foreground text-sm">Select BHK options...</span>
                         )}
@@ -350,11 +350,11 @@ const LeadForm = ({ variant = "hero", title, subtitle }: LeadFormProps) => {
   }
 
   return (
-    <div className="bg-card/95 backdrop-blur-sm p-6 rounded-2xl shadow-luxury border">
+    <div className="bg-gradient-luxury backdrop-blur-sm p-6 rounded-2xl shadow-luxury border">
       {title && (
         <div className="text-center mb-3">
-          <h3 className="text-2xl font-bold text-foreground mb-1">{title}</h3>
-          {subtitle && <p className="text-muted-foreground">{subtitle}</p>}
+          <h3 className="text-2xl text-white font-bold text-foreground mb-1">{title}</h3>
+          {subtitle && <p className="text-muted-foreground text-white">{subtitle}</p>}
         </div>
       )}
 
@@ -417,7 +417,7 @@ const LeadForm = ({ variant = "hero", title, subtitle }: LeadFormProps) => {
                           className="w-full justify-between"
                         >
                           Add BHK options
-                          <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                          <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50 " />
                         </Button>
                       </PopoverTrigger>
 
@@ -488,10 +488,10 @@ const LeadForm = ({ variant = "hero", title, subtitle }: LeadFormProps) => {
 
                     <div className="flex flex-wrap gap-2 min-h-[2.5rem] p-2 border rounded-md">
                       {field.value.length === 0 && (
-                        <span className="text-muted-foreground text-sm">Selected BHK options...</span>
+                        <span className="text-muted-foreground text-sm text-white">Selected BHK options...</span>
                       )}
                       {field.value.map((option) => (
-                        <div key={option} className="flex items-center gap-1 bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">
+                        <div key={option} className="flex items-center gap-1 bg-primary/10 text-primary px-2 py-1 rounded-md text-sm text-white">
                           {option}
                           <button
                             type="button"
@@ -525,7 +525,7 @@ const LeadForm = ({ variant = "hero", title, subtitle }: LeadFormProps) => {
                   />
                 </FormControl>
                 <div className="space-y-1 leading-none">
-                  <FormLabel className="text-sm">
+                  <FormLabel className="text-sm text-white">
                     I agree to receive updates and offers
                   </FormLabel>
                 </div>

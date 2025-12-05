@@ -47,16 +47,16 @@ const LocationConnectivity = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-gradient-luxury">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-4xl font-bold text-foreground text-white mb-6">
                 Location & Connectivity
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Strategically located in Sector 12, Greater Noida West, Godrej Majesty offers
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-white">
+                Strategically located in Sector 76,Noida,UP. AU Aspire offers
                 unparalleled connectivity to Delhi NCR and all major landmarks. Experience the
                 convenience of urban living with easy access to everything you need.
               </p>

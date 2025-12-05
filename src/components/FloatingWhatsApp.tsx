@@ -28,7 +28,7 @@ const FloatingWhatsApp = () => {
               <Button
                 onClick={makeCall}
                 className="w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-600 text-white shadow-luxury hover:shadow-xl transition-all duration-300"
-                title="Call Now"
+                title=""
               >
                 <Phone className="h-6 w-6" />
               </Button>

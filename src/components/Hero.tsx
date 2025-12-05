@@ -93,7 +93,7 @@ const Hero = () => {
             <div className="bg-card/5 backdrop-blur-sm p-2 sm:p-3 md:p-4 rounded-xl border border-primary-foreground/20 w-full">
               <LeadForm
                 variant="hero"
-                title="Get Exclusive Details"
+                title="Get Details"
                 subtitle="Fill the form to receive brochure and get best offers"
               />
             </div>

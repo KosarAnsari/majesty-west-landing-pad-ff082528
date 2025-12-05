@@ -11,7 +11,7 @@ const ProjectOverview = () => {
     {
       icon: MapPin,
       title: "Prime Location",
-      description: "Sector 12, Greater Noida West"
+      description: "Sector 76, Noida, UP"
     },
     {
       icon: Trophy,
@@ -40,8 +40,8 @@ const ProjectOverview = () => {
                 Project Overview
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Godrej Majesty stands as a testament to luxury living in Greater Noida West.
-                Strategically located in Sector 12, this premium residential project offers
+                Aspire City stands as a testament to luxury living in Noida,UP.
+                Strategically located in Sector 76, this premium residential project offers
                 an unprecedented lifestyle experience with meticulously designed 3 & 4 BHK
                 apartments that redefine modern living standards.
               </p>
@@ -72,20 +72,20 @@ const ProjectOverview = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 ">
               {highlights.map((item, index) => (
                 <div
                   key={item.title}
-                  className="bg-card p-6 rounded-xl shadow-elegant hover:shadow-luxury transition-all duration-300 animate-fade-up"
+                  className="bg-card p-6 rounded-xl shadow-elegant hover:shadow-luxury transition-all duration-300 animate-fade-up bg-yellow-400"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-12 h-12 bg-gradient-luxury rounded-lg flex items-center justify-center mb-4">
                     <item.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                  <h3 className="text-lg font-semibold text-foreground mb-2 text-blue-900">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground text-sm text-blue-900">
                     {item.description}
                   </p>
                 </div>
