@@ -150,7 +150,7 @@ const LocationConnectivity = () => {
 
               <div className="text-center">
                 <p className="text-sm text-muted-foreground">
-                  Sector 12, Greater Noida West, Uttar Pradesh 201318
+                  Sector 76, Noida, Uttar Pradesh 201301
                 </p>
               </div>
             </div>
