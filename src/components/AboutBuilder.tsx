@@ -62,10 +62,10 @@ const AboutBuilder = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-muted/30 ">
+      <div className="container mx-auto px-6 ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4 ">
             About Aspire city Properties
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -122,19 +122,19 @@ const AboutBuilder = () => {
               {achievements.map((achievement, index) => (
                 <div 
                   key={achievement.title}
-                  className="bg-card p-6 rounded-xl shadow-elegant text-center animate-scale-in"
+                  className="bg-yellow-500 p-6 rounded-xl shadow-elegant text-center animate-scale-in "
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="w-12 h-12 bg-gradient-luxury rounded-lg flex items-center justify-center mx-auto mb-4">
                     <achievement.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <div className="text-2xl font-bold text-primary mb-2">
+                  <div className="text-2xl font-bold mb-2">
                     {achievement.number}
                   </div>
                   <h4 className="font-semibold text-foreground text-sm mb-1">
                     {achievement.title}
                   </h4>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-sm text-muted-foreground">
                     {achievement.subtitle}
                   </p>
                 </div>

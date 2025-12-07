@@ -20,7 +20,7 @@ const ProjectOverview = () => {
     },
     {
       icon: Calendar,
-      title: "Ready to Move",
+      title: "Under Construction",
       description: "Possession by 2030"
     },
     // {
