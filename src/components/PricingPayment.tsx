@@ -98,12 +98,12 @@ const PricingPayment = () => {
                 {pricingPlans.map((plan, index) => (
                   <div 
                     key={plan.type}
-                    className="bg-card p-6 rounded-xl shadow-elegant hover:shadow-luxury transition-all duration-300 animate-fade-up"
+                    className="bg-yellow-400 p-6 rounded-xl shadow-elegant hover:shadow-luxury transition-all duration-300 animate-fade-up"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="text-center mb-6">
                       <h4 className="text-xl font-bold text-foreground mb-2">{plan.type}</h4>
-                      <p className="text-sm text-muted-foreground mb-4">{plan.area}</p>
+                      <p className="text-sm text-black mb-4">{plan.area}</p>
                       <div className="text-2xl font-bold text-primary mb-2">{plan.basePrice}</div>
                       {/* <p className="text-sm text-muted-foreground">Starting from {plan.pricePerSqft}/sq.ft</p> */}
                     </div>
@@ -112,7 +112,7 @@ const PricingPayment = () => {
                       {plan.highlights.map((highlight) => (
                         <div key={highlight} className="flex items-center text-sm">
                           <CheckCircle className="h-4 w-4 text-primary mr-2" />
-                          <span className="text-muted-foreground">{highlight}</span>
+                          <span className="text-black">{highlight}</span>
                         </div>
                       ))}
                     </div>

@@ -55,7 +55,7 @@ const Header = () => {
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
                 data-scroll-to={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 text-sm font-medium text-white"
+                className="text-foreground hover:text-yellow-400 transition-colors duration-200 text-sm font-medium text-white"
               >
                 {item.label}
               </button>
@@ -71,7 +71,7 @@ const Header = () => {
             <Button
               onClick={() => scrollToSection("#contact-sales-team")}
               data-scroll-to="#contact-sales-team"
-              className="bg-gradient-luxury hover:opacity-90 transition-opacity"
+              className="bg-gradient-luxury hover:opacity-80 transition-opacity"
             >
               Get Details
             </Button>
