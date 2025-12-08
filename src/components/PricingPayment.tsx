@@ -14,7 +14,7 @@ const PricingPayment = () => {
     },
     {
       type: "3 BHK + Study",
-      area: "2368 Sq. Ft.",
+      area: "2781 Sq. Ft.",
       basePrice: "₹3.29 Cr – ₹3.72 Cr",
       pricePerSqft: "₹3,800",
       highlights: ["Corner Units", "Extra Balcony", "Premium Finishes"]
@@ -28,7 +28,7 @@ const PricingPayment = () => {
     },
     {
       type: "4 BHK + Study",
-      area: "2799 Sq. Ft.",
+      area: "3342 Sq. Ft.",
       basePrice: " ₹3.96 Cr – ₹4.48 Cr",
       pricePerSqft: "₹4,000",
       highlights: ["Penthouse Style", "Panoramic Views", "Luxury Amenities"]

@@ -68,7 +68,7 @@ const ContactInfo = () => {
   <h3 className="text-base font-semibold mb-1 text-foreground text-white">Contact Us Directly</h3>
   <div className="space-y-2">
     <div 
-      className="flex items-center gap-2 p-2 hover:bg-muted rounded-lg cursor-pointer transition-colors"
+      className="flex items-center gap-2 p-2 hover:bg-yellow-400 rounded-lg cursor-pointer transition-colors"
       onClick={handlePhoneClick}
     >
       <Phone className="h-4 w-4 text-primary text-white" />
@@ -79,7 +79,7 @@ const ContactInfo = () => {
     </div>
     
     <div 
-      className="flex items-center gap-2 p-2 hover:bg-muted rounded-lg cursor-pointer transition-colors"
+      className="flex items-center gap-2 p-2 hover:bg-yellow-400 rounded-lg cursor-pointer transition-colors"
       onClick={handleWhatsAppClick}
     >
       <MessageCircle className="h-4 w-4 text-green-600" />

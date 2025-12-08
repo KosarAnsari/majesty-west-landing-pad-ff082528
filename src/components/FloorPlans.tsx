@@ -32,7 +32,7 @@ const FloorPlans = () => {
   const floorPlans = [
     {
       id: "3bhk",
-      title: "3 BHK",
+      title: "3 BHk",
       subtitle: "Premium Apartments",
       area: "1993 Sq. Ft.",
       price: "₹2.90 Cr – ₹3.20 Cr",
@@ -46,7 +46,7 @@ const FloorPlans = () => {
         "Servant Room"
       ],
       specifications: {
-        "Carpet Area": "1993 Sq. Ft.",
+        "Carpet Area": "148.51 Sq. Ft.",
         "Bedrooms": "3",
         "Bathrooms": "2",
         "Balconies": "2"
@@ -68,7 +68,7 @@ const FloorPlans = () => {
         "3 Balconies"
       ],
       specifications: {
-        "Carpet Area": "2368 Sq. Ft.",
+        "Carpet Area": "148.51 Sq. Ft.",
         "Bedrooms": "3 + Study",
         "Bathrooms": "3",
         "Balconies": "3"
@@ -98,7 +98,7 @@ const FloorPlans = () => {
     },
     {
       id: "4bhk-study",
-      title: "4 BHK + Study + Plan",
+      title: "4 BHK + Study",
       subtitle: "Luxury Apartments",
       area:"2799 Sq. Ft.",
       price: " ₹3.96 Cr – ₹4.48 Cr",
@@ -113,7 +113,7 @@ const FloorPlans = () => {
         "Utility Room"
       ],
       specifications: {
-        "Carpet Area": "2799 Sq. Ft.",
+        "Carpet Area": "188.93 Sq. Ft.",
         "Bedrooms": "4",
         "Bathrooms": "4",
         "Balconies": "3"
