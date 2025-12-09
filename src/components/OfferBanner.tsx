@@ -3,14 +3,14 @@ import React from "react";
 
 const OfferBanner: React.FC = () => {
     return (
-        <div className="relative overflow-hidden bg-gradient-to-r from-[#0b0b15] via-[#b5892e] to-[#f6e27a] border-[#facc15] text-white text-center p-4 md:p-6 shadow-xl animate-[float_4s_ease-in-out_infinite] mt-4 min-h-[350px] md:h-[400px] flex flex-col items-center justify-center">
+        <div className="relative overflow-hidden bg-gradient-to-r from-[#0b0b15] via-[#b5892e] to-[#f6e27a] border-[#facc15] text-white text-center p-4 md:p-6 shadow-xl animate-[float_4s_ease-in-out_infinite] mt-4 min-h-[350px] md:h-[400px] flex flex-col items-center justify-center">*
             {/* Title */}
             <h1 className="text-2xl md:text-4xl font-extrabold mb-2 bg-gradient-to-r from-[#FFD700] via-[#FFCC33] to-[#FFD700] bg-clip-text text-transparent drop-shadow-lg gold-blink relative">
                 ✨  ✨
             </h1>
             <h2 className="text-lg md:text-3xl font-extrabold mb-1 drop-shadow-md mt-2 px-2">
                 🏢 Early Birds Offer
-            </h2>
+            </h2>*
 
             {/* Validity */}
             <div className="bg-white/20 backdrop-blur-sm px-3 md:px-4 py-1 rounded-full inline-block text-sm md:text-md font-semibold mb-4 md:mb-6 mt-2 md:mt-4">
@@ -50,9 +50,9 @@ const OfferBanner: React.FC = () => {
         }
       `}</style>
 
-            <style >{`
+            <style >{`*/}
         /* Blink with brightness instead of opacity */
-        @keyframes goldBlink {
+       {/* @keyframes goldBlink {
           0%, 100% {
             filter: brightness(1) drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
           }
@@ -62,10 +62,10 @@ const OfferBanner: React.FC = () => {
         }
         .gold-blink {
           animation: goldBlink 1.2s infinite ease-in-out;
-        }
+        }*/}
 
         /* Sparkle Animation */
-        @keyframes sparkle {
+       {/* @keyframes sparkle {
           0%, 100% { opacity: 0; transform: scale(0.8) rotate(0deg); }
           50% { opacity: 1; transform: scale(1.3) rotate(45deg); }
         }

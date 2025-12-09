@@ -35,20 +35,20 @@ const Hero = () => {
 
 
             <p className="text-lg md:text-xl lg:text-2xl mb-3 md:mb-4 opacity-90">
-             Redefining Urban Living in Sector 76, Noida
+             Redefining Urban Living in TechZone-4, Noida Extension
             </p>
 
             <p className="text-base md:text-lg mb-6 md:mb-8 opacity-80 leading-relaxed">
-              3 & 4 BHK Ultra Luxury Apartments
+              3 BHK Ultra Luxury Apartments
               
                world-class amenities,
-              strategic location, and architectural excellence by AU Aspire.
+              strategic location, and architectural excellence by AU Real Estate.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-12 text-center">
               {/* Feature 1 */}
               <div className="animate-scale-in" style={{ animationDelay: "0.2s" }}>
-                <div className="text-2xl font-bold text-accent">3 & 4 BHK</div>
+                <div className="text-2xl font-bold text-accent">3 BHK</div>
                 <div className="text-sm opacity-80">Ultra Luxury Homes</div>
               </div>
 
@@ -64,7 +64,7 @@ const Hero = () => {
                 <div className="text-sm opacity-80">Best Locations</div>
               </div>
             </div>
-            <div className="flex flex-col items-center mt-6 mb-6">
+            {/*<div className="flex flex-col items-center mt-6 mb-6">
               <span className="text-sm uppercase tracking-widest text-white mb-0 leading-none">
                 Powered By
               </span>
@@ -73,7 +73,7 @@ const Hero = () => {
                 alt="Godrej Logo"
                 className="w-32 h-12 sm:w-40 sm:h-16 md:w-48 md:h-20 lg:w-64 lg:h-28 object-contain mt-1"
               />
-            </div>
+            </div>*/}
 
 
 

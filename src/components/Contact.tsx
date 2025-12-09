@@ -115,7 +115,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Project Location</h3>
-                <p className="opacity-80">Sector 76, Noida, UP</p>
+                <p className="opacity-80">Techzone-4 , Noida Extension</p>
               </div>
             </div>
 

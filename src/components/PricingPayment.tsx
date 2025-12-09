@@ -6,20 +6,20 @@ import LeadForm from "./LeadForm";
 const PricingPayment = () => {
  const pricingPlans = [
     {
-      type: "3 BHK",
-      area: "1993 Sq. Ft.",
+      type: "3 BHK + 3 Toilets",
+      area: "2176 Sq. Ft.",
       basePrice: "₹2.90 Cr – ₹3.20 Cr",
       pricePerSqft: "₹3,600",
       highlights: ["Prime Location", "Garden Facing", "Vastu Compliant"]
     },
     {
-      type: "3 BHK + Study",
-      area: "2781 Sq. Ft.",
+      type: "3 BHK + Store",
+      area: "2188 Sq. Ft.",
       basePrice: "₹3.29 Cr – ₹3.72 Cr",
       pricePerSqft: "₹3,800",
       highlights: ["Corner Units", "Extra Balcony", "Premium Finishes"]
     },
-    {
+    /*{
       type: "4 BHK",
       area: "2757 Sq. Ft.",
       basePrice: "₹3.56 Cr – ₹4.19 Cr",
@@ -32,7 +32,7 @@ const PricingPayment = () => {
       basePrice: " ₹3.96 Cr – ₹4.48 Cr",
       pricePerSqft: "₹4,000",
       highlights: ["Penthouse Style", "Panoramic Views", "Luxury Amenities"]
-    }
+    }*/
   ];
 
   const paymentPlans = [
@@ -89,16 +89,16 @@ const PricingPayment = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 mb-16 ">
           <div className="lg:col-span-2">
             {/* Pricing Section */}
             <div className="mb-12">
               <h3 className="text-2xl font-bold text-foreground mb-8">Current Pricing</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto  ">
                 {pricingPlans.map((plan, index) => (
                   <div 
                     key={plan.type}
-                    className="bg-yellow-400 p-6 rounded-xl shadow-elegant hover:shadow-luxury transition-all duration-300 animate-fade-up"
+                    className="bg-yellow-400 p-6 rounded-xl shadow-elegant hover:shadow-luxury transition-all duration-300 animate-fade-up "
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="text-center mb-6">

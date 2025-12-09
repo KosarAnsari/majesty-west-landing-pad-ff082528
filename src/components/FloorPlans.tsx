@@ -31,10 +31,10 @@ const FloorPlans = () => {
 
   const floorPlans = [
     {
-      id: "3bhk",
-      title: "3 BHk",
+      id: "3bhk-toilets",
+      title: "3 BHk + 3 Toilets",
       subtitle: "Premium Apartments",
-      area: "1993 Sq. Ft.",
+      area: "2176 Sq. Ft.",
       price: "₹2.90 Cr – ₹3.20 Cr",
       image: new3BHK1,
       features: [
@@ -53,10 +53,10 @@ const FloorPlans = () => {
       }
     },
     {
-      id: "3bhk-study",
-      title: "3 BHK + Study",
+      id: "3bhk-store",
+      title: "3 BHK + Store",
       subtitle: "Executive Apartments",
-      area: "2368 Sq. Ft.",
+      area: "2188 Sq. Ft.",
       price: "₹3.29 Cr – ₹3.72 Cr",
       image: new3BHK2,
       features: [
@@ -74,7 +74,7 @@ const FloorPlans = () => {
         "Balconies": "3"
       }
     },
-    {
+    /*{
       id: "4bhk",
       title: "4 BHK",
       subtitle: "Luxury Apartments",
@@ -118,7 +118,7 @@ const FloorPlans = () => {
         "Bathrooms": "4",
         "Balconies": "3"
       }
-    }
+    }*/
   ];
 
 
@@ -200,8 +200,8 @@ const downloadPdf = async () => {
           </p>
         </div>
 
-        <Tabs defaultValue="3bhk" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-8 md:mb-12 max-w-lg mx-auto h-auto p-1">
+        <Tabs defaultValue="3bhk-toilets" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-2 mb-8 md:mb-12 max-w-xs mx-auto h-auto p-1 ">
             {floorPlans.map((plan) => (
               <TabsTrigger key={plan.id} value={plan.id} className="text-sm">
                 {plan.title}
@@ -292,7 +292,7 @@ const downloadPdf = async () => {
                 </div>
 
                 <div className="relative">
-                  <div className="bg-card p-6 rounded-xl shadow-elegant">
+                  {/*<div className="p-6 rounded-xl shadow-elegant">
                     <img
                       src={plan.image}
                       alt={`${plan.title} Floor Plan`}
@@ -308,7 +308,7 @@ const downloadPdf = async () => {
                         <Eye className="h-4 w-4" />
                       </Button>
                     </div>
-                  </div>
+                  </div>*/}
                 </div>
               </div>
             </TabsContent>

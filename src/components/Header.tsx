@@ -38,7 +38,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-14 h-14 flex items-center justify-center rounded-full bg-accent/10">
-              <img src={logo} alt="Godrej Logo" className="w-10 h-10 object-contain" />
+             {/* <img src={logo} alt="Godrej Logo" className="w-10 h-10 object-contain" />*/}
             </div>
             <div>
               <h1 className="text-4xl font-sm bg-clip-text text-white tracking-wide">
