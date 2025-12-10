@@ -56,7 +56,7 @@ const LocationConnectivity = () => {
                 Location & Connectivity
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-white">
-                Strategically located in Sector 76,Noida,UP. AU Aspire offers
+                Strategically located in Techzone-4,Noida Extension. AU Aspire offers
                 unparalleled connectivity to Delhi NCR and all major landmarks. Experience the
                 convenience of urban living with easy access to everything you need.
               </p>
@@ -150,7 +150,7 @@ const LocationConnectivity = () => {
 
               <div className="text-center">
                 <p className="text-sm text-muted-foreground">
-                  Sector 76, Noida, Uttar Pradesh 201301
+                  Techzone-4,Noida Extension
                 </p>
               </div>
             </div>

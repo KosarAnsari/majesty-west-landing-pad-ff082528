@@ -5,13 +5,13 @@ const ProjectOverview = () => {
   const highlights = [
     {
       icon: Building2,
-      title: "3 & 4 BHK",
+      title: "3 BHK",
       description: "Ultra Luxury Apartments"
     },
     {
       icon: MapPin,
       title: "Prime Location",
-      description: "Sector 76, Noida, UP"
+      description: "Techzone-4,Noida Extension"
     },
     {
       icon: Trophy,
@@ -41,8 +41,8 @@ const ProjectOverview = () => {
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Aspire City stands as a testament to luxury living in Noida,UP.
-                Strategically located in Sector 76, this premium residential project offers
-                an unprecedented lifestyle experience with meticulously designed 3 & 4 BHK
+                Strategically located in Techzone-4,Noida Extention, this premium residential project offers
+                an unprecedented lifestyle experience with meticulously designed 3 BHK
                 apartments that redefine modern living standards.
               </p>
 

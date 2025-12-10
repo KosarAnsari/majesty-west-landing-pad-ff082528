@@ -29,9 +29,9 @@ const Index = () => {
       <section id="luxury-living-noida">
         <Hero />
       </section>
-      <section id="offer-banner">
+      {/*<section id="offer-banner">
         <OfferBanner />
-      </section>
+      </section>*/}
       <section id="godrej-majesty-overview">
         <ProjectOverview />
       </section>
@@ -45,9 +45,9 @@ const Index = () => {
       <section id="spacious-floor-plans">
         <FloorPlans />
       </section>
-      <section id="project-gallery-images">
+      {/*<section id="project-gallery-images">
         <ProjectGallery />
-      </section>
+      </section>*/}
       {/* <BrochureSection /> */}
       <section id="pricing-payment-options">
         <PricingPayment />

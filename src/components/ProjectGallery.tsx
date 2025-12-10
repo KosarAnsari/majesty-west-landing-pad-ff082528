@@ -202,9 +202,9 @@ const ProjectGallery = () => {
             Video Gallery
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Take a virtual tour through Godrej Majesty and experience the luxury, 
+            Take a virtual tour through AU Real Estate and experience the luxury, 
             comfort, and lifestyle that awaits you.
-          </p>
+          </p>*
         </div>
         
         {/* <Tabs defaultValue="exterior" className="w-full">
@@ -253,7 +253,7 @@ const ProjectGallery = () => {
             Video Walkthrough
           </h3> */}
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+         {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {galleryItems.filter(item => item.file_type === 'video').length > 0 
               ? galleryItems.filter(item => item.file_type === 'video').map((video, index) => (
                 <div 
@@ -322,7 +322,7 @@ const ProjectGallery = () => {
                 </div>
               ))
             }
-          </div>
+          </div>*/}
         </div>
         
         {/* <div className="text-center mt-12">

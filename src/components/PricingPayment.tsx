@@ -8,15 +8,15 @@ const PricingPayment = () => {
     {
       type: "3 BHK + 3 Toilets",
       area: "2176 Sq. Ft.",
-      basePrice: "₹2.90 Cr – ₹3.20 Cr",
-      pricePerSqft: "₹3,600",
+     // basePrice: "₹2.90 Cr – ₹3.20 Cr",
+      pricePerSqft: "₹7979",
       highlights: ["Prime Location", "Garden Facing", "Vastu Compliant"]
     },
     {
       type: "3 BHK + Store",
       area: "2188 Sq. Ft.",
-      basePrice: "₹3.29 Cr – ₹3.72 Cr",
-      pricePerSqft: "₹3,800",
+     // basePrice: "₹3.29 Cr – ₹3.72 Cr",
+      pricePerSqft: "₹7979",
       highlights: ["Corner Units", "Extra Balcony", "Premium Finishes"]
     },
     /*{
@@ -103,9 +103,9 @@ const PricingPayment = () => {
                   >
                     <div className="text-center mb-6">
                       <h4 className="text-xl font-bold text-foreground mb-2">{plan.type}</h4>
-                      <p className="text-sm text-black mb-4">{plan.area}</p>
-                      <div className="text-2xl font-bold text-primary mb-2">{plan.basePrice}</div>
-                      {/* <p className="text-sm text-muted-foreground">Starting from {plan.pricePerSqft}/sq.ft</p> */}
+                      <p className="text-xs text-black mb-4">{plan.area}</p>
+                      <div className="text-2xl font-bold text-primary mb-2">{/*{plan.basePrice}*/}</div>
+                       <p className="text-sm text-black font-sm">Starting from {plan.pricePerSqft}/sq.ft</p> 
                     </div>
                     
                     <div className="space-y-2 mb-6">

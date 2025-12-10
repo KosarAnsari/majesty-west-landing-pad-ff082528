@@ -35,7 +35,7 @@ const FloorPlans = () => {
       title: "3 BHk + 3 Toilets",
       subtitle: "Premium Apartments",
       area: "2176 Sq. Ft.",
-      price: "₹2.90 Cr – ₹3.20 Cr",
+      price: "₹ 7979 per Sq. Ft",
       image: new3BHK1,
       features: [
         "3 Spacious Bedrooms",
@@ -57,7 +57,7 @@ const FloorPlans = () => {
       title: "3 BHK + Store",
       subtitle: "Executive Apartments",
       area: "2188 Sq. Ft.",
-      price: "₹3.29 Cr – ₹3.72 Cr",
+      price: "₹ 7979 per Sq. Ft.",
       image: new3BHK2,
       features: [
         "3 Spacious Bedrooms",
@@ -74,7 +74,7 @@ const FloorPlans = () => {
         "Balconies": "3"
       }
     },
-    /*{
+   /* {
       id: "4bhk",
       title: "4 BHK",
       subtitle: "Luxury Apartments",
@@ -201,7 +201,7 @@ const downloadPdf = async () => {
         </div>
 
         <Tabs defaultValue="3bhk-toilets" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-2 mb-8 md:mb-12 max-w-xs mx-auto h-auto p-1 ">
+          <TabsList className="grid w-sm grid-cols-2 sm:grid-cols-2 mb-8 md:mb-12 max-w-sm mx-auto h-auto p-1 ">
             {floorPlans.map((plan) => (
               <TabsTrigger key={plan.id} value={plan.id} className="text-sm">
                 {plan.title}
@@ -269,7 +269,7 @@ const downloadPdf = async () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-3 mt-8">
+                    {/*<div className="flex flex-col sm:flex-row gap-3 mt-8">
                       <Button
                         variant="default"
                         className="flex-1"
@@ -287,12 +287,12 @@ const downloadPdf = async () => {
                         Download PDF
                       </Button>
 
-                    </div>
+                    </div>*/}
                   </div>
                 </div>
 
-                <div className="relative">
-                  {/*<div className="p-6 rounded-xl shadow-elegant">
+                {/*<div className="relative">
+                  <div className="bg-card p-6 rounded-xl shadow-elegant">
                     <img
                       src={plan.image}
                       alt={`${plan.title} Floor Plan`}
@@ -308,8 +308,8 @@ const downloadPdf = async () => {
                         <Eye className="h-4 w-4" />
                       </Button>
                     </div>
-                  </div>*/}
-                </div>
+                  </div>
+                </div>*/}
               </div>
             </TabsContent>
           ))}
