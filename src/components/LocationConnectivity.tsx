@@ -40,7 +40,7 @@ const LocationConnectivity = () => {
     {
       icon: Car,
       title: "NH24 Expressway",
-      distance: "5-8 KM",
+      distance: "8 KM",
       time: "10 mins drive",
       color: "text-cyan-500"
     }
