@@ -5,21 +5,21 @@ const LocationConnectivity = () => {
     {
       icon: Train,
       title: "Metro Station",
-      distance: "7 KM",
-      time: "15 mins drive",
+      distance: "5-10 KM",
+      time: "10 mins drive",
       color: "text-blue-500"
     },
     {
       icon: Plane,
       title: "IGI Airport",
-      distance: "45 KM",
+      distance: "40.8 KM",
       time: "1 hour drive",
       color: "text-green-500"
     },
     {
       icon: GraduationCap,
       title: "Top Schools",
-      distance: "1-3 KM",
+      distance: "0-2 KM",
       time: "Walking distance",
       color: "text-purple-500"
     },
@@ -40,7 +40,7 @@ const LocationConnectivity = () => {
     {
       icon: Car,
       title: "NH24 Expressway",
-      distance: "10 KM",
+      distance: "5-8 KM",
       time: "10 mins drive",
       color: "text-cyan-500"
     }
@@ -95,25 +95,25 @@ const LocationConnectivity = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between">
                     <span>Pari Chowk</span>
-                    <span>5 KM</span>
+                    <span>1 KM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Noida City Centre</span>
-                    <span>12 KM</span>
+                    <span>7 KM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>DND Flyway</span>
-                    <span>15 KM</span>
+                    <span>8 KM</span>
                   </div>
                 </div>
                 <div className="space-y-2">
                   <div className="flex justify-between">
                     <span>Connaught Place</span>
-                    <span>35 KM</span>
+                    <span>28 KM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Cyber City Gurgaon</span>
-                    <span>55 KM</span>
+                    <span>37 KM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Greater Noida</span>

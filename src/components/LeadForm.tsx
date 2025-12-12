@@ -350,7 +350,7 @@ const LeadForm = ({ variant = "hero", title, subtitle }: LeadFormProps) => {
   }
 
   return (
-    <div className="bg-gradient-luxury backdrop-blur-sm p-6 rounded-2xl shadow-luxury border">
+    <div className="bg-gradient-luxury backdrop-blur-sm p-6 rounded-2xl shadow-luxury border text-white">
       {title && (
         <div className="text-center mb-3">
           <h3 className="text-2xl text-white font-bold text-foreground mb-1">{title}</h3>
@@ -414,7 +414,7 @@ const LeadForm = ({ variant = "hero", title, subtitle }: LeadFormProps) => {
                         <Button
                           variant="outline"
                           role="combobox"
-                          className="w-full justify-between"
+                          className="w-full justify-between text-black"
                         >
                           Add BHK options
                           <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50 " />

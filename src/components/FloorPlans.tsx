@@ -1,15 +1,10 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Download, Eye, Home, Square } from "lucide-react";
-import floorPlan3BHK from "@/assets/floor-plan-3bhk.jpg";
-import floorPlan4BHK from "@/assets/floor-plan-4bhk.jpg";
+import { Home, Square } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import new3BHK1 from "@/assets/3BHK1.png";
 import new3BHK2 from "@/assets/3BHK2.png";
-import new4BHK1 from "@/assets/4BHK1.png";
-import new4BHK2 from "@/assets/4BHK2.png";
 
 interface Plan {
   id: string;
@@ -46,7 +41,7 @@ const FloorPlans = () => {
         "Servant Room"
       ],
       specifications: {
-        "Carpet Area": "148.51 Sq. Ft.",
+       // "Carpet Area": "148.51 Sq. Ft.",
         "Bedrooms": "3",
         "Bathrooms": "2",
         "Balconies": "2"
@@ -68,8 +63,8 @@ const FloorPlans = () => {
         "3 Balconies"
       ],
       specifications: {
-        "Carpet Area": "148.51 Sq. Ft.",
-        "Bedrooms": "3 + Study",
+       // "Carpet Area": "148.51 Sq. Ft.",
+        "Bedrooms": "3 + Store",
         "Bathrooms": "3",
         "Balconies": "3"
       }
@@ -200,120 +195,66 @@ const downloadPdf = async () => {
           </p>
         </div>
 
-        <Tabs defaultValue="3bhk-toilets" className="w-full">
-          <TabsList className="grid w-sm grid-cols-2 sm:grid-cols-2 mb-8 md:mb-12 max-w-sm mx-auto h-auto p-1 ">
-            {floorPlans.map((plan) => (
-              <TabsTrigger key={plan.id} value={plan.id} className="text-sm">
-                {plan.title}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {floorPlans.map((plan) => (
-            <TabsContent key={plan.id} value={plan.id}>
-              <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
-                <div className="space-y-6">
-                  <div className="bg-card p-4 md:p-6 lg:p-8 rounded-xl shadow-elegant">
-                    <div className="flex items-start justify-between mb-6">
-                      <div>
-                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-2">
-                          {plan.title}
-                        </h3>
-                        <p className="text-base md:text-lg text-muted-foreground mb-4">
-                          {plan.subtitle}
-                        </p>
-                        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6">
-                          <div className="flex items-center">
-                            <Square className="h-5 w-5 text-primary mr-2" />
-                            <span className="text-sm text-muted-foreground">
-                              {plan.area} sq.ft
-                            </span>
-                          </div>
-                          <div className="flex items-center">
-                            <Home className="h-5 w-5 text-primary mr-2" />
-                            <span className="font-semibold text-primary">
-                              {plan.price}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
+            <div key={plan.id} className="bg-card p-4 md:p-6 lg:p-8 rounded-xl shadow-elegant">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                    {plan.title}
+                  </h3>
+                  <p className="text-base md:text-lg text-muted-foreground mb-4">
+                    {plan.subtitle}
+                  </p>
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                    <div className="flex items-center">
+                      <Square className="h-5 w-5 text-primary mr-2" />
+                      <span className="text-sm text-muted-foreground">
+                        {plan.area}
+                      </span>
                     </div>
-
-                    <div className="space-y-6">
-                      <div>
-                        <h4 className="text-lg font-semibold text-foreground mb-4">
-                          Key Features
-                        </h4>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          {plan.features.map((feature, index) => (
-                            <div key={index} className="flex items-center">
-                              <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                              <span className="text-sm text-muted-foreground">{feature}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      <div>
-                        <h4 className="text-lg font-semibold text-foreground mb-4">
-                          Specifications
-                        </h4>
-                        <div className="space-y-3">
-                          {Object.entries(plan.specifications).map(([key, value]) => (
-                            <div key={key} className="flex justify-between py-2 border-b border-border">
-                              <span className="text-sm text-muted-foreground">{key}</span>
-                              <span className="text-sm font-medium text-foreground">{value}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
+                    <div className="flex items-center">
+                      <Home className="h-5 w-5 text-primary mr-2" />
+                      <span className="font-semibold text-primary">
+                        {plan.price}
+                      </span>
                     </div>
+                  </div>
+                </div>
+              </div>
 
-                    {/*<div className="flex flex-col sm:flex-row gap-3 mt-8">
-                      <Button
-                        variant="default"
-                        className="flex-1"
-                        onClick={() => setSelectedPlan(plan.image)}
-                      >
-                        <Eye className="h-4 w-4 mr-2" />
-                        View Floor Plan
-                      </Button>
-                      <Button
-                        variant="outline"
-                        className="flex-1"
-                        onClick={downloadPdf}
-                      >
-                        <Download className="h-4 w-4 mr-2" />
-                        Download PDF
-                      </Button>
-
-                    </div>*/}
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-4">
+                    Key Features
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {plan.features.map((feature, index) => (
+                      <div key={index} className="flex items-center">
+                        <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                        <span className="text-sm text-muted-foreground">{feature}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
-                {/*<div className="relative">
-                  <div className="bg-card p-6 rounded-xl shadow-elegant">
-                    <img
-                      src={plan.image}
-                      alt={`${plan.title} Floor Plan`}
-                      className="w-full h-auto rounded-lg cursor-pointer hover:shadow-luxury transition-shadow duration-300"
-                      onClick={() => setSelectedPlan(plan.image)}
-                    />
-                    <div className="absolute top-8 right-8">
-                      <Button
-                        size="sm"
-                        variant="secondary"
-                        onClick={() => setSelectedPlan(plan.image)}
-                      >
-                        <Eye className="h-4 w-4" />
-                      </Button>
-                    </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-4">
+                    Specifications
+                  </h4>
+                  <div className="space-y-3">
+                    {Object.entries(plan.specifications).map(([key, value]) => (
+                      <div key={key} className="flex justify-between py-2 border-b border-border">
+                        <span className="text-sm text-muted-foreground">{key}</span>
+                        <span className="text-sm font-medium text-foreground">{value}</span>
+                      </div>
+                    ))}
                   </div>
-                </div>*/}
+                </div>
               </div>
-            </TabsContent>
+            </div>
           ))}
-        </Tabs>
+        </div>
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">

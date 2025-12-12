@@ -23,10 +23,10 @@ const formSchema = z.object({
 });
 
 const bhkOptions = [
-  { value: "2 BHK (Sold Out)", label: "2 BHK (Sold Out)" },
-  { value: "3 BHK (Filling Fast)", label: "3 BHK (Filling Fast)" },
-  { value: "4 BHK (Available)" , label: "4 BHK (Available)" },
-  { value: "4+ BHK (Available)", label: "4+ BHK (Available)" },
+ // { value: "2 BHK (Sold Out)", label: "2 BHK (Sold Out)" },
+  { value: "3 BHK-toilets (Filling Fast)", label: "3 BHK+ 3 Toilets (Filling Fast)" },
+  { value: "3 BHK-store (Available)" , label: "3 BHK + Store (Available)" },
+ // { value: "4+ BHK (Available)", label: "4+ BHK (Available)" },
 
 ];
 

@@ -15,7 +15,7 @@ const Header = () => {
     { label: "Location", href: "#prime-location-connectivity" },
     { label: "Amenities", href: "#world-class-amenities" },
     { label: "Floor Plans", href: "#spacious-floor-plans" },
-    { label: "Gallery", href: "#project-gallery-images" },
+   // { label: "Gallery", href: "#project-gallery-images" },
     { label: "Pricing", href: "#pricing-payment-options" },
     { label: "Contact", href: "#contact-sales-team" },
   ];
@@ -37,8 +37,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-14 h-14 flex items-center justify-center rounded-full bg-accent/10">
-             {/* <img src={logo} alt="Godrej Logo" className="w-10 h-10 object-contain" />*/}
+            <div className=" w-20 h-15 flex items-center justify-center  bg-accent/10">
+              <img src={logo} alt="Godrej Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <h1 className="text-4xl font-sm bg-clip-text text-white tracking-wide">
